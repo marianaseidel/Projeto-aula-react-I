@@ -19,7 +19,7 @@ Children é uma propriedade do objeto props, e seu uso permite a alteração de 
 ## Consumir dados internos
 
 #### Map:
-Ao importar uma estrutura de dados array para ser usada em um componente, foi necessário usar o Map para percorrer cada item do array e trazer os valores dos itens para renderizar na tela. Ou seja, dentro de cada item do array, estão os valores dos itens que serão usados como componenetes do card a ser renderizado na tela, e para que isso aconteça é necessário acessar os itens, mapear e dentro de cada um deles retornar os valores desejados nas tags determinadas.
+Ao importar uma estrutura de dados array para ser usada em um componente, foi necessário usar o Map para percorrer cada item do array e trazer os valores dos itens para renderizar na tela. Ou seja, dentro de cada item do array estão os valores dos itens que serão usados como componenentes do card a ser renderizado na tela, e para que isso aconteça é necessário acessar os itens, mapear e dentro de cada um deles retornar os valores desejados nas tags determinadas.
 
 #### Key:
 Key é a propriedade chave que se constitui como um valor único para cada item que vai renderizar na tela.
