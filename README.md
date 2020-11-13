@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# Meu Primeiro Projeto com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Me acompanhe também pelo [Linkedin](http://linkedin.com/in/mariana-seidel-444023193)
 
-## Available Scripts
+## Elementos
 
-In the project directory, you can run:
+Elementos são tags html que retornam de um componente.
 
-### `yarn start`
+## Componentes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Componentes são códigos independentes e reutilizáveis que podem ser funções ou classes, e nesse caso são componentes funcionais.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Props e Children
 
-### `yarn test`
+Props é um objeto javascript que é passado como parâmetro para o componente. Permite a reutilização dos componentes e a renderização de diferentes dados em cada um deles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Children é uma propriedade do objeto props, e seu uso permite a alteração de dados entre as tags de fechamento e abertura de um elemento.
 
-### `yarn build`
+## Consumir dados internos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Uso do map
+Ao importar uma estrutura de dados array para ser usada em um componente, foi necessário usar o Map para percorrer cada item do array e trazer os valores dos itens para renderizar na tela. Ou seja, dentro de cada item do array, estão os valores dos itens que serão usados como componenetes do card a ser renderizado na tela, e para que isso aconteça é necessário acessar os itens, mapear e dentro de cada um deles retornar os valores desejados nas tags determinadas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Key
+Key é a propriedade chave que se constitui como um valor único para cada item que vai renderizar na tela.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Desafio - aula react I {reprograma}:
 
-### `yarn eject`
+Passo a passo:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Crie um projeto react
+2. Apague as informações default
+3. Crie e exporte um arquivo que simula um JSON
+4. Crie um componente título que recebe o texto: "Meu Primeiro Projeto React do Zero", a ser renderizado por props ou children
+5. Crie um outro componente que mapeia os dados do arquivo que simula o JSON e retorna em elementos que devem ser renderizados na tela. Os dados devem conter 4 chaves e valores: id, nome, descrição e imagem.
+6. Import no App.js os componentes criados, perceba os erros/warnings que o terminal/console mostra, resolva e faça todos os componentes renderizar na tela
